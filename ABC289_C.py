@@ -11,8 +11,7 @@ for i in range(M):
     sets.append(s)
 
 for i in range(M):
-    num = i + 1
-    for team in itertools.combinations(sets, num):
+    for team in itertools.combinations(sets, i+1):
         select = []
         for element in team:
             select += element
